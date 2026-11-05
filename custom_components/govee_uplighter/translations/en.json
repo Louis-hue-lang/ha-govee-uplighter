@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee Uplighter (local)",
+        "description": "IP address of the H60B0 lamp. Enable LAN Control for it in the Govee Home app first; a DHCP reservation on the router keeps the address stable.",
+        "data": {
+          "host": "IP address",
+          "name": "Name"
+        }
+      },
+      "reconfigure": {
+        "title": "New IP address",
+        "data": {
+          "host": "IP address"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Enter an IPv4 address, e.g. 192.168.1.108."
+    },
+    "abort": {
+      "already_configured": "This lamp is already configured.",
+      "reconfigure_successful": "Address updated."
+    }
+  },
+  "entity": {
+    "light": {
+      "ripple": {
+        "name": "Ripple"
+      },
+      "side": {
+        "name": "Side"
+      },
+      "lower": {
+        "name": "Lower"
+      }
+    },
+    "number": {
+      "flow": {
+        "name": "Flow"
+      }
+    }
+  },
+  "services": {
+    "set_segments": {
+      "name": "Set side segments",
+      "description": "Colour, white or brightness of some of the 8 side ring segments.",
+      "fields": {
+        "segments": {
+          "name": "Segments",
+          "description": "Numbers 1 to 8, clockwise from the top."
+        },
+        "rgb_color": {
+          "name": "Colour",
+          "description": "RGB colour."
+        },
+        "color_temp_kelvin": {
+          "name": "White",
+          "description": "Colour temperature, 2700 to 6500 K."
+        },
+        "brightness_pct": {
+          "name": "Brightness",
+          "description": "0 switches the segments off."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "govee_uplighter",
+  "name": "Govee Uplighter (local)",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/Louis-hue-lang/ha-govee-uplighter",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "issue_tracker": "https://github.com/Louis-hue-lang/ha-govee-uplighter/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

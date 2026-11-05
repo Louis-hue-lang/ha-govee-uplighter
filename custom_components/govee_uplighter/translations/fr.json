@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee Uplighter (local)",
+        "description": "Adresse IP du lampadaire H60B0. Activez d'abord son « Contrôle LAN » dans l'app Govee Home ; une réservation DHCP sur la box garde l'adresse fixe.",
+        "data": {
+          "host": "Adresse IP",
+          "name": "Nom"
+        }
+      },
+      "reconfigure": {
+        "title": "Nouvelle adresse IP",
+        "data": {
+          "host": "Adresse IP"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Indiquez une adresse IPv4, par exemple 192.168.1.108."
+    },
+    "abort": {
+      "already_configured": "Ce lampadaire est déjà configuré.",
+      "reconfigure_successful": "Adresse mise à jour."
+    }
+  },
+  "entity": {
+    "light": {
+      "ripple": {
+        "name": "Ondulante"
+      },
+      "side": {
+        "name": "Latérale"
+      },
+      "lower": {
+        "name": "Inférieure"
+      }
+    },
+    "number": {
+      "flow": {
+        "name": "Débit"
+      }
+    }
+  },
+  "services": {
+    "set_segments": {
+      "name": "Régler des segments de l'anneau",
+      "description": "Couleur, blanc ou luminosité de certains des 8 segments de l'anneau latéral.",
+      "fields": {
+        "segments": {
+          "name": "Segments",
+          "description": "Numéros 1 à 8, dans le sens horaire depuis le haut."
+        },
+        "rgb_color": {
+          "name": "Couleur",
+          "description": "Couleur RVB."
+        },
+        "color_temp_kelvin": {
+          "name": "Blanc",
+          "description": "Température de couleur, 2700 à 6500 K."
+        },
+        "brightness_pct": {
+          "name": "Luminosité",
+          "description": "0 éteint les segments."
+        }
+      }
+    }
+  }
+}

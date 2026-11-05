@@ -1,0 +1,27 @@
+set_segments:
+  target:
+    entity:
+      integration: govee_uplighter
+      domain: light
+  fields:
+    segments:
+      required: true
+      example: "[1, 2, 3, 4]"
+      selector:
+        object:
+    rgb_color:
+      example: "[0, 255, 0]"
+      selector:
+        color_rgb:
+    color_temp_kelvin:
+      selector:
+        color_temp:
+          unit: kelvin
+          min: 2700
+          max: 6500
+    brightness_pct:
+      selector:
+        number:
+          min: 0
+          max: 100
+          unit_of_measurement: "%"
